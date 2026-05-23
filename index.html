@@ -3,271 +3,674 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <meta name="theme-color" content="#000000">
-  <title>AdultForce · Sinfully Hot | Mobile</title>
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="description" content="AdultForce · Velvet Sin | Immersive premium adult entertainment with 4K content and interactive experiences.">
+  <title>AdultForce · Velvet Sin | Immersive Seduction</title>
+  <!-- Google Fonts: Attractive, dynamic, high-end modern fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,500;14..32,700;14..32,900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Montserrat+Alternates:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', 'Helvetica Neue', sans-serif;
-      background: #000000;
+      /* Dynamic premium font stack with inter & Playfair for elegance */
+      font-family: 'Inter', 'Montserrat Alternates', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at 25% 20%, #0a010f, #020005);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 12px;
-      animation: bgPulse 8s infinite alternate;
+      padding: 18px;
+      position: relative;
+      overflow-x: hidden;
     }
 
-    @keyframes bgPulse {
-      0% { background: #000000; }
-      100% { background: #1a050f; }
-    }
-
-    /* MAIN LANDING - FULLY RESPONSIVE */
-    .main-content {
-      max-width: 100%;
+    /* Cinematic animated gradient overlay */
+    body::before {
+      content: "";
+      position: fixed;
       width: 100%;
-      background: #030005;
-      border-radius: 48px;
-      overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 51, 102, 0.3);
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(255, 50, 100, 0.2) 0%, transparent 65%),
+                  radial-gradient(circle at 30% 85%, rgba(255, 30, 80, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      animation: cinematicGlow 9s infinite alternate;
     }
 
-    .hero {
-      background: linear-gradient(125deg, #0a0010 0%, #1a0520 50%, #0a0010 100%);
-      padding: 60px 20px 50px;
+    @keyframes cinematicGlow {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    /* main glass container - high-end, now with dynamic tilt */
+    .glass-panel {
+      max-width: 1320px;
+      width: 100%;
+      background: rgba(6, 2, 12, 0.6);
+      backdrop-filter: blur(18px);
+      border-radius: 80px;
+      border: 1px solid rgba(255, 70, 120, 0.45);
+      box-shadow: 0 35px 65px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 100, 150, 0.25) inset, 0 0 40px rgba(255, 35, 85, 0.3);
+      overflow: hidden;
+      transition: transform 0.2s ease-out;
+      z-index: 2;
+      background: linear-gradient(135deg, rgba(15, 5, 22, 0.88), rgba(5, 2, 12, 0.96));
+    }
+
+    /* ========== ATTRACTIVE CREATIVE TYPOGRAPHY (ADULTFORCE by hut clip) ========== */
+    .velvet-hero {
+      padding: 3.2rem 2rem 2.5rem;
       text-align: center;
       position: relative;
-      border-bottom: 3px solid #ff3366;
+      border-bottom: 2px solid rgba(255, 70, 110, 0.6);
+      background: radial-gradient(ellipse at 50% 0%, rgba(255, 55, 95, 0.18), transparent 75%);
     }
 
-    .hero::after {
-      content: "❤️‍🔥";
-      font-size: 80px;
-      opacity: 0.08;
-      position: absolute;
-      bottom: 10px;
-      right: 15px;
-      pointer-events: none;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 900;
-      background: linear-gradient(135deg, #ffffff, #ff99cc, #ff3366, #ff6699);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      margin-bottom: 15px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      color: #ffbbdd;
-      max-width: 100%;
-      margin: 0 auto;
-      font-weight: 600;
-      padding: 0 10px;
-    }
-
-    .hot-badge {
-      background: linear-gradient(90deg, #ff2266, #aa2266);
-      color: white;
-      text-align: center;
-      padding: 14px 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      word-break: break-word;
-    }
-
-    .grid {
+    .force-brand {
       display: flex;
       flex-direction: column;
-      gap: 25px;
-      padding: 40px 20px;
-      background: radial-gradient(circle at top, #0d0212, #000000);
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      margin-bottom: 0.75rem;
     }
 
-    .card {
-      background: linear-gradient(145deg, #0f0718, #08020f);
-      border-radius: 40px;
-      padding: 35px 20px;
-      text-align: center;
-      transition: all 0.3s ease;
-      border: 1px solid rgba(255, 51, 102, 0.3);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-    }
-
-    .card:active {
-      transform: scale(0.98);
-    }
-
-    .card .emoji-big {
-      font-size: 64px;
-      display: inline-block;
-      filter: drop-shadow(0 0 8px #ff3366);
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      background: linear-gradient(135deg, #ff6680, #ff99bb);
+    /* Main title "ADULTFORCE" – ultra attractive font (Playfair Display + Montserrat mix) */
+    .force-main {
+      font-family: 'Playfair Display', 'Montserrat Alternates', serif;
+      font-size: clamp(2.8rem, 10vw, 5.4rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      background: linear-gradient(125deg, #FFF2F5, #FFA5C2, #FF3B6F, #F70C48, #FF668F);
+      background-size: 250% auto;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      margin: 15px 0 12px;
-      font-size: 1.8rem;
-      font-weight: 900;
+      text-shadow: 0 4px 25px rgba(255, 30, 80, 0.5);
+      animation: hypnoticShine 7s linear infinite;
+      position: relative;
+      display: inline-block;
     }
 
-    .card p {
-      color: #ddbbdd;
-      margin-bottom: 25px;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      padding: 0 8px;
+    @keyframes hypnoticShine {
+      0% { background-position: 0% 50%; filter: drop-shadow(0 0 5px #ff2e63);}
+      100% { background-position: 200% 50%; filter: drop-shadow(0 0 12px #ff1a4f);}
     }
 
-    .btn-cta {
-      background: linear-gradient(90deg, #ff2266, #ff5588);
-      color: white;
-      padding: 16px 24px;
-      border: none;
+    /* "by hut clip" – stylish, creative, attractive */
+    .byline-creative {
+      font-family: 'Montserrat Alternates', 'Inter', cursive;
+      font-size: clamp(0.95rem, 4vw, 1.4rem);
+      font-weight: 700;
+      background: linear-gradient(105deg, #FFCCDD, #FF90B5, #FFE0EC);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 2px;
+      margin-top: -8px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 6px;
+      backdrop-filter: blur(2px);
+      padding: 0.2rem 1rem;
       border-radius: 60px;
-      font-weight: 800;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.2s;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-      width: 100%;
-      max-width: 280px;
-      margin: 0 auto;
-      display: block;
+      border: 1px dashed rgba(255, 110, 140, 0.7);
+      animation: subtleBreathing 2.8s infinite alternate;
     }
 
-    .btn-cta:active {
-      transform: scale(0.96);
+    @keyframes subtleBreathing {
+      0% { opacity: 0.7; letter-spacing: 1px; }
+      100% { opacity: 1; letter-spacing: 3px; text-shadow: 0 0 4px #ff3366; }
     }
 
-    .footer {
-      background: #020004;
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 0.7rem;
-      color: #aa88aa;
-      border-top: 1px solid #331a33;
+    .byline-creative span {
+      font-size: 1.2em;
+      filter: drop-shadow(0 0 3px #ff3366);
     }
 
-    .footer a {
-      color: #ff88bb;
-      text-decoration: none;
+    /* floating lips & dynamic icon-row */
+    .floating-symbol {
+      font-size: 4.2rem;
+      filter: drop-shadow(0 0 14px #ff2e63);
+      animation: floatLust 3.6s ease-in-out infinite;
+      display: inline-block;
+      margin-bottom: 0.6rem;
+      background: rgba(0,0,0,0.2);
+      border-radius: 100px;
+      padding: 0.1rem 0.4rem;
+    }
+
+    @keyframes floatLust {
+      0% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-10px) scale(1.05); text-shadow: 0 0 15px #ff4d7a; }
+      100% { transform: translateY(0px) scale(1); }
+    }
+
+    .hero-tagline {
+      font-family: 'Montserrat Alternates', monospace;
+      font-size: 0.9rem;
       font-weight: 600;
+      background: rgba(0,0,0,0.55);
+      display: inline-block;
+      padding: 0.5rem 1.6rem;
+      border-radius: 100px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 100, 140, 0.7);
+      color: #FFCCDD;
+      letter-spacing: 2px;
+      margin-top: 16px;
     }
 
-    /* Touch optimizations */
-    button {
+    .pulse-badge {
+      background: linear-gradient(95deg, #c01144, #ff3366, #ff6b96);
+      margin: 1.8rem auto 0;
+      width: fit-content;
+      padding: 0.7rem 2rem;
+      border-radius: 80px;
+      font-weight: 800;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: #fff0f3;
+      box-shadow: 0 0 22px rgba(255, 30, 70, 0.7);
+      backdrop-filter: blur(8px);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      transition: 0.25s ease;
+    }
+
+    /* Grid responsive premium */
+    .sensual-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2.8rem 1.8rem;
+    }
+
+    @media (min-width: 720px) {
+      .sensual-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 3.2rem 2.5rem;
+      }
+    }
+
+    /* sexy cards with dynamic hover */
+    .desire-card {
+      background: rgba(18, 5, 28, 0.7);
+      backdrop-filter: blur(14px);
+      border-radius: 54px;
+      padding: 2rem 1.2rem;
+      text-align: center;
+      transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+      border: 1px solid rgba(255, 70, 120, 0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .desire-card:hover {
+      transform: translateY(-12px);
+      border-color: #ff4f80;
+      box-shadow: 0 30px 50px rgba(255, 40, 80, 0.45), 0 0 20px rgba(255, 80, 120, 0.5);
+      background: rgba(25, 8, 38, 0.9);
+    }
+
+    .desire-card:active {
+      transform: scale(0.97);
+    }
+
+    .icon-lust {
+      font-size: 4rem;
+      margin-bottom: 0.6rem;
+      filter: drop-shadow(0 0 8px #ff3366);
+      transition: all 0.2s;
+    }
+
+    .desire-card h3 {
+      font-family: 'Playfair Display', 'Montserrat Alternates', serif;
+      font-size: 1.9rem;
+      font-weight: 800;
+      background: linear-gradient(125deg, #FFC1D0, #FF6B97);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 0.6rem 0 0.75rem;
+      letter-spacing: -0.3px;
+    }
+
+    .desire-card p {
+      color: #EACCE6;
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 1.45;
+      margin-bottom: 1.8rem;
+    }
+
+    /* dynamic button neon */
+    .btn-sin {
+      background: linear-gradient(105deg, #ff1a4f, #ff4d7a, #ff1a4f);
+      background-size: 200% auto;
+      border: none;
+      padding: 0.9rem 1rem;
+      border-radius: 80px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: white;
+      letter-spacing: 1.2px;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+      position: relative;
+      overflow: hidden;
       touch-action: manipulation;
     }
 
-    /* Small phones */
-    @media (max-width: 480px) {
-      body { padding: 8px; }
-      .hero h1 { font-size: 2rem; }
-      .card h3 { font-size: 1.5rem; }
-      .card .emoji-big { font-size: 52px; }
-      .hero { padding: 45px 15px 35px; }
-      .grid { padding: 30px 15px; gap: 20px; }
-      .card { padding: 28px 16px; }
+    .btn-sin:active {
+      transform: scale(0.95);
+      background-position: 100% 0;
     }
 
-    /* Large phones / tablets */
-    @media (min-width: 768px) {
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        flex-direction: row;
-        gap: 30px;
-      }
-      .hero h1 { font-size: 3.5rem; }
-      .hero p { font-size: 1.3rem; }
+    /* shimmer effect for VIP exclusive */
+    .vip-shimmer {
+      position: relative;
+    }
+    .vip-shimmer::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(115deg, rgba(255,255,240,0) 20%, rgba(255,180,200,0.3) 50%, rgba(255,255,240,0) 80%);
+      transform: rotate(25deg);
+      animation: silverShimmer 6s infinite;
+      pointer-events: none;
+    }
+    @keyframes silverShimmer {
+      0% { transform: translateX(-100%) rotate(25deg); }
+      100% { transform: translateX(100%) rotate(25deg); }
+    }
+
+    .sinful-footer {
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 70, 110, 0.4);
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(8px);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #D9AFC9;
+    }
+
+    .sinful-footer a {
+      color: #FF90B5;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 0 6px;
+      transition: 0.2s;
+    }
+
+    .sinful-footer a:active {
+      color: #ffccdd;
+    }
+
+    /* canvas particles layer */
+    #lustCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* responsive fine-tuning */
+    @media (max-width: 550px) {
+      .glass-panel { border-radius: 48px; }
+      .velvet-hero { padding: 2rem 1rem 1.5rem; }
+      .desire-card h3 { font-size: 1.5rem; }
+      .sensual-grid { padding: 1.8rem 1rem; gap: 1.5rem; }
+      .btn-sin { font-size: 0.8rem; max-width: 190px; padding: 0.75rem; }
+      .byline-creative { font-size: 0.7rem; letter-spacing: 1px; }
+      .force-main { letter-spacing: -0.5px; }
+    }
+
+    /* animation on load */
+    .glass-panel {
+      animation: fadeUpGlow 0.9s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+    }
+    @keyframes fadeUpGlow {
+      0% { opacity: 0; transform: translateY(40px); filter: blur(6px);}
+      100% { opacity: 1; transform: translateY(0); filter: blur(0);}
     }
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5VBLDPTT8V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5VBLDPTT8V');
-</script>
 </head>
 <body>
+  <canvas id="lustCanvas"></canvas>
 
-<!-- MAIN LANDING - NO AGE GATE, DIRECT ACCESS -->
-<div class="main-content">
-  <div class="hero">
-    <h1>🔥 ADULTFORCE ·<br> AFTER DARK 🔥</h1>
-    <p>The hottest premium adult experience. Uncensored. Wild. Yours.</p>
-  </div>
-  <div class="hot-badge">
-    💋 100% ADULTS ONLY | REAL 21+ MODELS | 4K HARDCORE 💋
-  </div>
-  <div class="grid">
-    <div class="card">
-      <div class="emoji-big">🍆💦🔥</div>
-      <h3>XXX PREMIUM</h3>
-      <p>4K exclusive videos, fetish, threesomes, and mind-blowing orgasms. New daily.</p>
-      <button class="btn-cta" id="videosBtn">👉 WATCH VIDEOS 👈</button>
+  <div class="glass-panel">
+    <div class="velvet-hero">
+      <div class="floating-symbol">💋🔥🍷💦</div>
+      <!-- CREATIVE ATTRACTIVE TITLE with AdultForce by hut clip (superior font styling) -->
+      <div class="force-brand">
+        <div class="force-main">ADULTFORCE</div>
+        <div class="byline-creative">
+          <span>✦</span> by hut clip <span>✦</span>
+        </div>
+      </div>
+      <div class="hero-tagline">THE ULTIMATE SINFUL ODYSSEY · 8K PREMIUM · EDGE OF ECSTASY</div>
+      <div class="pulse-badge">
+        <span>🔥 21+ SINNERS ONLY 🔥</span>
+        <span>⚡ HARDCORE ELITE ⚡</span>
+      </div>
     </div>
-    <div class="card">
-      <div class="emoji-big">🎥💋🍑</div>
-      <h3>LIVE SEX CAMS</h3>
-      <p>Real models, live & horny. Private shows, interactive toys, filthy chat.</p>
-      <button class="btn-cta" id="camsBtn">👉 LIVE CAMS 👈</button>
-    </div>
-    <div class="card">
-      <div class="emoji-big">👑💎❤️‍🔥</div>
-      <h3>VIP ORGY ACCESS</h3>
-      <p>Unlimited streaming, members-only hardcore, custom requests, full library.</p>
-      <button class="btn-cta" id="membersBtn">👉 UNLOCK VIP 👈</button>
-    </div>
-  </div>
-  <div class="footer">
-    <p>© 2025 AdultForce · Sinful | <a href="#" id="dmcaLink">2257</a> | <a href="#" id="termsLink">Terms (18+)</a><br>
-    All models 21+ | Explicit content</p>
-  </div>
-</div>
 
-<script>
-  // 🔥 REPLACE THESE THREE LINKS WITH YOUR ACTUAL ADULTFORCE OFFER URLs 🔥
-  document.getElementById('videosBtn').addEventListener('click', () => {
-    window.location.href = 'https://your-videos-link.adultforce.com';
-  });
-  document.getElementById('camsBtn').addEventListener('click', () => {
-    window.location.href = 'https://your-cams-link.adultforce.com';
-  });
-  document.getElementById('membersBtn').addEventListener('click', () => {
-    window.location.href = 'https://your-signup-link.adultforce.com';
-  });
+    <div class="sensual-grid">
+      <!-- card 1 - Ecstasy Vault -->
+      <div class="desire-card" data-url="video">
+        <div class="icon-lust">🍆💦🌶️🎬</div>
+        <h3>ECSTASY VAULT</h3>
+        <p>Uncensored 4K+ taboo fantasies, exclusive fetish orgies & daily sinful drops.</p>
+        <button class="btn-sin" data-action="videos">🍑 ENTER VAULT →</button>
+      </div>
 
-  document.getElementById('dmcaLink').addEventListener('click', (e) => {
-    e.preventDefault();
-    alert('2257 Records: All models 21+. Custodian available.');
-  });
-  document.getElementById('termsLink').addEventListener('click', (e) => {
-    e.preventDefault();
-    alert('Adults only. Age verification required by law.');
-  });
-</script>
+      <!-- card 2 - Live Cams interactive -->
+      <div class="desire-card" data-url="cams">
+        <div class="icon-lust">🎥💋🔥🎙️</div>
+        <h3>LIVE FIRE CAMS</h3>
+        <p>Interactive models, toy control, 1-on-1 seduction, filthy dirty chat.</p>
+        <button class="btn-sin" data-action="cams">💋 WATCH LIVE →</button>
+      </div>
+
+      <!-- card 3 - Diamond VIP with shimmer -->
+      <div class="desire-card vip-shimmer" data-url="vip">
+        <div class="icon-lust">👑❤️‍🔥🥂💎</div>
+        <h3>DIAMOND VIP</h3>
+        <p>Unlimited streaming, custom requests, hardcore library, zero ads, priority access.</p>
+        <button class="btn-sin" data-action="vip">✨ UNLOCK THE SIN ✨</button>
+      </div>
+    </div>
+
+    <div class="sinful-footer">
+      <p>© 2025 AdultForce · Velvet Sin Division | <a href="#" id="dmcaCustomLink">18 U.S.C. 2257</a> | <a href="#" id="termsCustomLink">Terms (18+ Only)</a><br>
+      All models verified 21+ | Real desire, premium interactive fantasy</p>
+    </div>
+  </div>
+
+  <script>
+    // =================================================================
+    // 🔥 REPLACE WITH YOUR ACTUAL OFFER LINKS (ADULTFORCE by hut clip) 🔥
+    // =================================================================
+    const OFFER_LINKS = {
+      VIDEO_VAULT: 'https://your-video-vault.adultforce.com',   // <--- REPLACE WITH REAL LINK
+      LIVE_CAMS: 'https://your-live-cams.adultforce.com',       // <--- REPLACE WITH REAL LINK
+      VIP_CLUB: 'https://your-vip-club.adultforce.com'          // <--- REPLACE WITH REAL LINK
+    };
+    // =================================================================
+
+    // Enhanced navigation with haptic and micro toast if not set
+    function triggerNavigation(destinationUrl) {
+      if (!destinationUrl || destinationUrl.includes('your-') || destinationUrl === '#') {
+        // Toast sexy alert (demo mode creative)
+        const toast = document.createElement('div');
+        toast.innerText = '✨ UPDATE OFFER LINKS · ADULTFORCE READY ✨';
+        toast.style.position = 'fixed';
+        toast.style.bottom = '30px';
+        toast.style.left = '50%';
+        toast.style.transform = 'translateX(-50%)';
+        toast.style.backgroundColor = '#dd1a4a';
+        toast.style.color = '#fff';
+        toast.style.padding = '14px 28px';
+        toast.style.borderRadius = '80px';
+        toast.style.fontWeight = 'bold';
+        toast.style.fontFamily = "'Montserrat Alternates', sans-serif";
+        toast.style.zIndex = '9999';
+        toast.style.backdropFilter = 'blur(16px)';
+        toast.style.fontSize = '0.85rem';
+        toast.style.boxShadow = '0 12px 30px rgba(0,0,0,0.6)';
+        toast.style.border = '1px solid #ff7096';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2100);
+        if (window.navigator && window.navigator.vibrate) window.navigator.vibrate(35);
+        return;
+      }
+      if (window.navigator && window.navigator.vibrate) window.navigator.vibrate(40);
+      window.location.href = destinationUrl;
+    }
+
+    // grab buttons
+    const videoBtn = document.querySelector('[data-action="videos"]');
+    const camsBtn = document.querySelector('[data-action="cams"]');
+    const vipBtn = document.querySelector('[data-action="vip"]');
+    const videoCard = document.querySelector('.desire-card[data-url="video"]');
+    const camsCard = document.querySelector('.desire-card[data-url="cams"]');
+    const vipCard = document.querySelector('.desire-card[data-url="vip"]');
+
+    function handleVideo() { triggerNavigation(OFFER_LINKS.VIDEO_VAULT); }
+    function handleCams() { triggerNavigation(OFFER_LINKS.LIVE_CAMS); }
+    function handleVip() { triggerNavigation(OFFER_LINKS.VIP_CLUB); }
+
+    if (videoBtn) videoBtn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); handleVideo(); });
+    if (camsBtn) camsBtn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); handleCams(); });
+    if (vipBtn) vipBtn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); handleVip(); });
+    
+    if (videoCard) videoCard.addEventListener('click', (e) => { if (e.target.tagName !== 'BUTTON') handleVideo(); });
+    if (camsCard) camsCard.addEventListener('click', (e) => { if (e.target.tagName !== 'BUTTON') handleCams(); });
+    if (vipCard) vipCard.addEventListener('click', (e) => { if (e.target.tagName !== 'BUTTON') handleVip(); });
+
+    // Legal modals with premium style
+    const dmcaLink = document.getElementById('dmcaCustomLink');
+    const termsLink = document.getElementById('termsCustomLink');
+
+    function showModal(title, msg) {
+      const modalDiv = document.createElement('div');
+      modalDiv.style.position = 'fixed';
+      modalDiv.style.top = '0';
+      modalDiv.style.left = '0';
+      modalDiv.style.width = '100%';
+      modalDiv.style.height = '100%';
+      modalDiv.style.backgroundColor = 'rgba(0,0,0,0.85)';
+      modalDiv.style.backdropFilter = 'blur(14px)';
+      modalDiv.style.zIndex = '10001';
+      modalDiv.style.display = 'flex';
+      modalDiv.style.alignItems = 'center';
+      modalDiv.style.justifyContent = 'center';
+      modalDiv.style.padding = '20px';
+      const dialog = document.createElement('div');
+      dialog.style.backgroundColor = '#120a1c';
+      dialog.style.maxWidth = '360px';
+      dialog.style.width = '100%';
+      dialog.style.borderRadius = '60px';
+      dialog.style.padding = '2rem 1.5rem';
+      dialog.style.textAlign = 'center';
+      dialog.style.border = '1px solid #ff4d7a';
+      dialog.style.boxShadow = '0 25px 45px black';
+      dialog.style.fontFamily = "'Inter', sans-serif";
+      const titleEl = document.createElement('h3');
+      titleEl.innerText = title;
+      titleEl.style.color = '#FF9BB8';
+      titleEl.style.fontSize = '1.6rem';
+      titleEl.style.marginBottom = '1rem';
+      titleEl.style.fontWeight = '800';
+      const msgEl = document.createElement('p');
+      msgEl.innerText = msg;
+      msgEl.style.color = '#E0C0D8';
+      msgEl.style.marginBottom = '1.8rem';
+      msgEl.style.lineHeight = '1.4';
+      const closeBtn = document.createElement('button');
+      closeBtn.innerText = 'I UNDERSTAND';
+      closeBtn.style.background = 'linear-gradient(95deg, #ff1a4f, #ff4d7a)';
+      closeBtn.style.border = 'none';
+      closeBtn.style.padding = '12px 0';
+      closeBtn.style.borderRadius = '100px';
+      closeBtn.style.width = '100%';
+      closeBtn.style.fontWeight = 'bold';
+      closeBtn.style.color = 'white';
+      closeBtn.style.fontSize = '1rem';
+      closeBtn.style.cursor = 'pointer';
+      closeBtn.addEventListener('click', () => modalDiv.remove());
+      dialog.appendChild(titleEl);
+      dialog.appendChild(msgEl);
+      dialog.appendChild(closeBtn);
+      modalDiv.appendChild(dialog);
+      document.body.appendChild(modalDiv);
+      if (window.navigator && window.navigator.vibrate) window.navigator.vibrate(20);
+    }
+
+    if (dmcaLink) {
+      dmcaLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showModal('📜 2257 COMPLIANCE', 'All models are at least 21 years old. Custodian of Records: AdultForce Compliance, 999 Sinner Avenue, Suite 4K. Full documentation maintained as per US federal law.');
+      });
+    }
+    if (termsLink) {
+      termsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showModal('⚠️ AGE RESTRICTION', 'You must be 18+ (21+ in certain regions) to access adult material. By proceeding you verify age and consent to explicit content. NO MINORS ALLOWED.');
+      });
+    }
+
+    // ========== DYNAMIC PARTICLES CANVAS (SENSUAL ENHANCEMENT) ==========
+    const canvas = document.getElementById('lustCanvas');
+    const ctx = canvas.getContext('2d');
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    let particles = [];
+    const PARTICLE_COUNT = 85;
+    
+    class SeduceParticle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.size = Math.random() * 5 + 1;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = (Math.random() - 0.5) * 0.3 + 0.1;
+        this.opacity = Math.random() * 0.6 + 0.2;
+        this.color = `rgba(255, 80, 130, ${this.opacity})`;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < -40) this.x = width + 40;
+        if (this.x > width + 40) this.x = -40;
+        if (this.y < -40) this.y = height + 40;
+        if (this.y > height + 40) this.y = -40;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = '#ff4570';
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size * 0.6, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 220, 210, 0.5)`;
+        ctx.fill();
+      }
+    }
+    
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new SeduceParticle());
+    }
+    
+    function animateParticles() {
+      if (!ctx) return;
+      ctx.clearRect(0, 0, width, height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      requestAnimationFrame(animateParticles);
+    }
+    
+    function resizeCanvas() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+      initParticles();
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    animateParticles();
+
+    // 3D TILT for mobile + desktop (high-end dynamic feel)
+    const glassPanel = document.querySelector('.glass-panel');
+    if (glassPanel) {
+      let tiltTimeout;
+      document.body.addEventListener('mousemove', (e) => {
+        const xAxis = (window.innerWidth / 2 - e.pageX) / 46;
+        const yAxis = (window.innerHeight / 2 - e.pageY) / 50;
+        glassPanel.style.transform = `perspective(1300px) rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+      });
+      document.body.addEventListener('mouseleave', () => {
+        glassPanel.style.transform = `perspective(1300px) rotateY(0deg) rotateX(0deg)`;
+      });
+      let touchMoving = false;
+      document.body.addEventListener('touchstart', () => { touchMoving = true; });
+      document.body.addEventListener('touchmove', (e) => {
+        if (!touchMoving || !e.touches.length) return;
+        const touch = e.touches[0];
+        const xPercent = (touch.clientX / window.innerWidth) * 2 - 1;
+        const yPercent = (touch.clientY / window.innerHeight) * 2 - 1;
+        const xRot = xPercent * 5.5;
+        const yRot = yPercent * -4.8;
+        glassPanel.style.transform = `perspective(1200px) rotateY(${xRot}deg) rotateX(${yRot}deg)`;
+        if (tiltTimeout) clearTimeout(tiltTimeout);
+        tiltTimeout = setTimeout(() => {
+          glassPanel.style.transform = `perspective(1200px) rotateY(0deg) rotateX(0deg)`;
+        }, 110);
+      });
+      document.body.addEventListener('touchend', () => { touchMoving = false; glassPanel.style.transform = `perspective(1200px) rotateY(0deg) rotateX(0deg)`; });
+    }
+
+    // reveal cards with scroll
+    const cards = document.querySelectorAll('.desire-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0px)';
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(40px)';
+      card.style.transition = 'opacity 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.2), transform 0.6s ease';
+      observer.observe(card);
+    });
+
+    setInterval(() => {
+      const badge = document.querySelector('.pulse-badge');
+      if (badge) {
+        badge.style.transform = 'scale(1.02)';
+        setTimeout(() => { if(badge) badge.style.transform = 'scale(1)'; }, 280);
+      }
+    }, 4200);
+
+    console.log('%c🔥 AdultForce · by hut clip — Attractive dynamic interface loaded 🔥', 'color: #ff4d7a; font-size: 14px; font-weight: bold;');
+    console.log('%c⚡️ Replace OFFER_LINKS to activate full experience ⚡️', 'color: #ffa5c2');
+  </script>
   <script src="https://pl29516469.effectivecpmnetwork.com/3f/7e/5c/3f7e5cc9fc3b572ebc061794dce8502a.js"></script>
-  <script src="https://pl29516470.effectivecpmnetwork.com/5b/2e/fc/5b2efc16340ba3ec16576ddb04603428.js"></script>
+<script src="https://pl29516470.effectivecpmnetwork.com/5b/2e/fc/5b2efc16340ba3ec16576ddb04603428.js"></script>
 </body>
 </html>

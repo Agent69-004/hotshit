@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdultForce · Sinfully Hot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', 'Poppins', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+      background: #000000;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      animation: bgPulse 8s infinite alternate;
+    }
+
+    @keyframes bgPulse {
+      0% { background: #000000; }
+      100% { background: #1a050f; }
+    }
+
+    /* AGE GATE - SEXY & DARK */
+    .age-gate {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, #0d0212 0%, #000000 100%);
+      backdrop-filter: blur(16px);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.6s ease;
+    }
+
+    .gate-card {
+      background: rgba(5, 0, 8, 0.85);
+      backdrop-filter: blur(20px);
+      border-radius: 60px;
+      max-width: 600px;
+      width: 90%;
+      padding: 55px 45px;
+      text-align: center;
+      box-shadow: 0 0 80px rgba(255, 51, 102, 0.5), 0 30px 60px rgba(0,0,0,0.8);
+      border: 1px solid rgba(255, 80, 120, 0.7);
+      animation: gateGlow 2s infinite alternate;
+    }
+
+    @keyframes gateGlow {
+      0% { box-shadow: 0 0 40px rgba(255, 51, 102, 0.3); border-color: rgba(255,80,120,0.5); }
+      100% { box-shadow: 0 0 100px rgba(255, 51, 102, 0.8); border-color: rgba(255,80,120,1); }
+    }
+
+    .gate-card h1 {
+      font-size: 3rem;
+      background: linear-gradient(135deg, #ff3366, #ff99cc, #ff3366);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .gate-card p {
+      color: #f0cce0;
+      font-size: 1.15rem;
+      margin-bottom: 35px;
+      line-height: 1.6;
+    }
+
+    .gate-buttons {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-enter {
+      background: linear-gradient(90deg, #ff2266, #ff5588);
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 0 20px #ff3366;
+      letter-spacing: 1px;
+    }
+
+    .btn-enter:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 40px #ff3366;
+    }
+
+    .btn-exit {
+      background: transparent;
+      color: #ff88aa;
+      border: 2px solid #ff5588;
+      padding: 16px 40px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-exit:hover {
+      background: rgba(255, 51, 102, 0.3);
+      color: white;
+      border-color: white;
+    }
+
+    /* MAIN LANDING - INSANELY HOT */
+    .main-content {
+      max-width: 1400px;
+      width: 100%;
+      background: #030005;
+      border-radius: 64px;
+      overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9), 0 0 0 2px rgba(255, 51, 102, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.8s ease;
+    }
+
+    .main-content.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .hero {
+      background: linear-gradient(125deg, #0a0010 0%, #1a0520 50%, #0a0010 100%);
+      padding: 100px 30px 80px;
+      text-align: center;
+      position: relative;
+      border-bottom: 4px solid #ff3366;
+    }
+
+    .hero::after {
+      content: "❤️‍🔥";
+      font-size: 140px;
+      opacity: 0.08;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      pointer-events: none;
+      animation: float 6s infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .hero h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, #ffffff, #ff99cc, #ff3366, #ff6699);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 25px;
+      letter-spacing: -2px;
+      animation: textFlicker 3s infinite;
+    }
+
+    @keyframes textFlicker {
+      0%, 100% { opacity: 1; text-shadow: 0 0 5px #ff3366; }
+      50% { opacity: 0.95; text-shadow: 0 0 20px #ff3366; }
+    }
+
+    .hero p {
+      font-size: 1.6rem;
+      color: #ffbbdd;
+      max-width: 800px;
+      margin: 0 auto;
+      font-weight: 600;
+      text-shadow: 0 0 12px rgba(255,51,102,0.5);
+    }
+
+    .hot-badge {
+      background: linear-gradient(90deg, #ff2266, #aa2266);
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      animation: stripeMove 0.5s linear infinite;
+      background-size: 200% 100%;
+    }
+
+    @keyframes stripeMove {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 100% 0%; }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 45px;
+      padding: 70px 50px;
+      background: radial-gradient(circle at top, #0d0212, #000000);
+    }
+
+    .card {
+      background: linear-gradient(145deg, #0f0718, #08020f);
+      border-radius: 48px;
+      padding: 50px 30px;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      border: 1px solid rgba(255, 51, 102, 0.3);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-20px) scale(1.02);
+      border-color: #ff5599;
+      box-shadow: 0 35px 60px rgba(255, 51, 102, 0.3);
+    }
+
+    .card .emoji-big {
+      font-size: 80px;
+      display: inline-block;
+      filter: drop-shadow(0 0 12px #ff3366);
+      animation: emojiBounce 1.5s infinite;
+    }
+
+    @keyframes emojiBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .card h3 {
+      background: linear-gradient(135deg, #ff6680, #ff99bb);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 25px 0 15px;
+      font-size: 2.2rem;
+      font-weight: 900;
+    }
+
+    .card p {
+      color: #ddbbdd;
+      margin-bottom: 35px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .btn-cta {
+      background: linear-gradient(90deg, #ff2266, #ff5588);
+      color: white;
+      padding: 16px 38px;
+      border: none;
+      border-radius: 60px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+      letter-spacing: 1px;
+    }
+
+    .btn-cta:hover {
+      background: linear-gradient(90deg, #ff4488, #ff77aa);
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff3366;
+    }
+
+    .footer {
+      background: #020004;
+      padding: 40px 30px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #aa88aa;
+      border-top: 1px solid #331a33;
+    }
+
+    .footer a {
+      color: #ff88bb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 750px) {
+      .hero h1 { font-size: 2.8rem; }
+      .grid { padding: 40px 25px; gap: 30px; }
+      .hero p { font-size: 1.2rem; }
+      .card h3 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- AGE VERIFICATION GATE -->
+<div id="ageGate" class="age-gate">
+  <div class="gate-card">
+    <h1>🔞 PURE SIN AWAITS</h1>
+    <p><strong>You MUST be 18+ (or legal age)</strong> to enter this erotic paradise.<br><br>
+    Explicit adult content, hardcore scenes, live XXX cams, and uncensored pleasure.<br>
+    By clicking ENTER, you confirm you are of legal age and consent to view adult material.</p>
+    <div class="gate-buttons">
+      <button class="btn-enter" id="enterBtn">💋 I'M 18+ — TAKE ME IN 💋</button>
+      <button class="btn-exit" id="exitBtn">🚫 EXIT — NOT FOR ME</button>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN LANDING - SEXY & SEDUCTIVE -->
+<div id="mainContent" class="main-content">
+  <div class="hero">
+    <h1>🔥 ADULTFORCE ·<br> <span style="background:linear-gradient(135deg,#ff3366,#ff88bb); -webkit-background-clip:text; background-clip:text; color:transparent;">AFTER DARK</span> 🔥</h1>
+    <p>The hottest premium adult experience. Uncensored. Wet. Wild. Yours.</p>
+  </div>
+  <div class="hot-badge">
+    💋 100% ADULTS ONLY | REAL 21+ MODELS | NO LIMITS | 4K HARDCORE 💋
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji-big">🍆💦🔥</div>
+      <h3>XXX PREMIUM</h3>
+      <p>4K exclusive videos, fetish, BDSM, threesomes, and mind-blowing orgasms. New daily.</p>
+      <button class="btn-cta" id="videosBtn">👉 WATCH HOTTEST VIDEOS 👈</button>
+    </div>
+    <div class="card">
+      <div class="emoji-big">🎥💋🍑</div>
+      <h3>LIVE SEX CAMS</h3>
+      <p>Real models, live & horny. Private shows, interactive toys, filthy chat.</p>
+      <button class="btn-cta" id="camsBtn">👉 ENTER LIVE CAMS NOW 👈</button>
+    </div>
+    <div class="card">
+      <div class="emoji-big">👑💎❤️‍🔥</div>
+      <h3>VIP ORGY ACCESS</h3>
+      <p>Unlimited streaming, members-only hardcore, custom requests, and full library.</p>
+      <button class="btn-cta" id="membersBtn">👉 UNLOCK VIP PASS 👈</button>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2025 AdultForce · Sinful Edition | <a href="#" id="dmcaLink">18 U.S.C. 2257</a> | <a href="#" id="termsLink">Terms + Privacy (18+)</a><br>
+    All models 21+ | Explicit content | Age verification required by law</p>
+  </div>
+</div>
+
+<script>
+  const ageGate = document.getElementById('ageGate');
+  const mainContent = document.getElementById('mainContent');
+  const enterBtn = document.getElementById('enterBtn');
+  const exitBtn = document.getElementById('exitBtn');
+
+  if (sessionStorage.getItem('ageVerified') === 'true') {
+    ageGate.style.display = 'none';
+    mainContent.classList.add('visible');
+  }
+
+  enterBtn.addEventListener('click', () => {
+    sessionStorage.setItem('ageVerified', 'true');
+    ageGate.style.opacity = '0';
+    setTimeout(() => {
+      ageGate.style.display = 'none';
+      mainContent.classList.add('visible');
+    }, 500);
+  });
+
+  exitBtn.addEventListener('click', () => {
+    window.location.href = 'https://www.google.com';
+  });
+
+  // 🔥 REPLACE THESE THREE LINKS WITH YOUR ACTUAL ADULTFORCE OFFER URLs 🔥
+  document.getElementById('videosBtn').addEventListener('click', () => {
+    window.location.href = 'https://your-videos-link.adultforce.com';
+  });
+  document.getElementById('camsBtn').addEventListener('click', () => {
+    window.location.href = 'https://your-cams-link.adultforce.com';
+  });
+  document.getElementById('membersBtn').addEventListener('click', () => {
+    window.location.href = 'https://your-signup-link.adultforce.com';
+  });
+
+  document.getElementById('dmcaLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('2257 Records: All models 21+. Custodian available.');
+  });
+  document.getElementById('termsLink').addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('Adults only. Age verification required. No redistribution.');
+  });
+</script>
+<script src="https://pl29516469.effectivecpmnetwork.com/3f/7e/5c/3f7e5cc9fc3b572ebc061794dce8502a.js"></script>
+</body>
+</html>
